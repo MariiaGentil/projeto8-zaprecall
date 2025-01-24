@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  --color-primary: #FB6B6B;
+  --secundary-font: "Recursive", serif;
+}
+
+:root {
+  font-family: "Righteous", serif;
+}
+
+body {
+  background-color: var(--color-primary);
+}
+
+.tela-principal {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tela-principal img {
+  width: 150px;
+  margin-top: -60px;
+}
+
+.tela-principal h1 {
+  color: #FFF;
+  padding: 50px 0;
+  font-size: 36px;
+}
+
+.option {
+  padding: 10px;
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+  width: 230px;
+  font-size: 18px;
+  color: var(--color-primary);
+}
+
+.option:focus {
+  outline: none;
+}
+
+.option::placeholder {
+  color: #adabab;
+  font-size: 14px;
+}
+
+option{
+  color: var(--color-primary);
+}
+
+
+option::placeholder{
+  background-color: red;
+}
+
+.botao-inicial {
+  font-family: var(--secundary-font);
+  color: #D70900;
+  font-size: 18px;
+  padding: 20px 55px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px #0000003a;
+  cursor: pointer;
+}
+
+.tela-pergunta {
+  height: 100vh;
+}
+
+.header {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  height: 60px;
+}
+
+.header h1 {
+  font-size: 36px;
+  padding-left: 35px;
+  color: #FFF;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.card {
+  box-shadow: 0 4px 4px #0000003a;
+  background-color: #FFF;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.card ion-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.card.open {
+  height: 150px;
+  background-color: #FFFFD4;
+  font-family: var(--secundary-font);
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.card.open ion-icon {
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+}
+
+.alternativas {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.nao {
+  background-color: #FF3030;
+  color: #FF3030;
+}
+
+.quase {
+  background-color: #FF922E;
+  color: #FF922E;
+}
+
+.sim {
+  background-color: #2FBE34;
+  color: #2FBE34;
+}
+
+.alternativas button {
+  width: 32%;
+  border-radius: 5px;
+  border: none;
+  color: #FFF !important;
+}
+
+.card.respondido p {
+  text-decoration: line-through;
+}
+
+.footer {
+  background-color: #FFF;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer p {
+  padding: 20px 0 10px;
+  font-size: 18px;
+}
+
+.footer button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color-primary);
+  color: #FFF;
+  font-family: var(--secundary-font);
+  margin-bottom: 10px;
+}
+
+.icons {
+  display: flex;
+  font-size: 30px;
+  gap: 5px;
+  padding-bottom: 15px;
+}
+
+.finalizacao {
+  letter-spacing: 1px;
+}
+
+.finalizacao-mensagem {
+  font-family: var(--secundary-font);
+}
+
+.concluidos {
+  font-family: var(--secundary-font);
+}
+
+body ion-icon {
+  background-color: transparent !important;
+}
+
+body p {
+  background-color: transparent !important;
+}
+
+
+
+
+
+
+
+
+
+.disabled {
+  display: none;
+}
+
+@media screen and (614px <=width) {}
