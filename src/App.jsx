@@ -4,8 +4,9 @@ import TelaPergunta from './components/TelaPergunta'
 
 function App() {
    const[mudarTela, setMudarTela] = useState('telaprincipal')
+   const [escolhaDeck, setEscolhaDeck] = useState(null)
    return(
-      mudarTela === 'telaprincipal' ? <TelaPrincipal setMudarTela={setMudarTela}/> : <TelaPergunta setMudarTela={setMudarTela}/>
+      mudarTela === 'telaprincipal' ? <TelaPrincipal setMudarTela={setMudarTela} setEscolhaDeck={setEscolhaDeck} escolhaDeck={escolhaDeck} /> : <TelaPergunta setMudarTela={setMudarTela} escolhaDeck={escolhaDeck}/>
    )
 }
 

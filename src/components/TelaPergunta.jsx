@@ -4,9 +4,9 @@ import LogoZR from '../assets/zr-logo.png'
 import Cards from './Cards'
 import Finalizacao from './Finalizacao'
 
-function TelaPergunta({ setMudarTela }) {
-  const [mostrarFinalizacao, setMostrarFinalizacao] = useState('')
-  const [receberRespostas, setReceberRespostas] = useState('')
+function TelaPergunta({ setMudarTela, escolhaDeck }) {
+  const [acertos, setAcertos] = useState(0)
+  const [concluidos, setConcluidos] = useState(0)
 
   return (
     <div className="tela-pergunta">
@@ -15,8 +15,8 @@ function TelaPergunta({ setMudarTela }) {
         <h1>ZapRecall</h1>
       </div>
       <div className="main">
-        <Cards setMostrarFinalizacao={setMostrarFinalizacao} setReceberRespostas={setReceberRespostas}/>
-        {mostrarFinalizacao !== '' ? <Finalizacao setMudarTela={setMudarTela} receberRespostas={receberRespostas} /> : <></>}
+        <Cards escolhaDeck={escolhaDeck} setAcertos={setAcertos} acertos={acertos} setConcluidos={setConcluidos} concluidos={concluidos} />
+        <Finalizacao setMudarTela={setMudarTela} acertos={acertos} escolhaDeck={escolhaDeck} concluidos={concluidos} />
       </div>
     </div>
   )

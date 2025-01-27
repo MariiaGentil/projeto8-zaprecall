@@ -75,6 +75,7 @@ option::placeholder{
 
 .tela-pergunta {
   height: 100vh;
+  overflow-y: scroll;
 }
 
 .header {
@@ -100,6 +101,11 @@ option::placeholder{
   gap: 30px;
   flex-grow: 1;
   justify-content: space-around;
+  margin-bottom: 150px;
+}
+
+.mensagem-erro-deck{
+  color: #ff0000;
 }
 
 .card {
@@ -158,6 +164,7 @@ option::placeholder{
 }
 
 .alternativas button {
+  cursor: pointer;
   width: 32%;
   border-radius: 5px;
   border: none;
@@ -178,6 +185,7 @@ option::placeholder{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  box-shadow: 0 -4px 4px #0000003a;
 }
 
 .footer p {
