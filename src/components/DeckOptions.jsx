@@ -62,10 +62,6 @@ function DeckOptions({setEscolhaDeck, escolhaDeck}) {
         {
             pergunta: 'Qual a diferença entre "id" e "class" no CSS?',
             resposta: 'id é único para cada elemento, enquanto class pode ser usada em vários elementos'
-        },
-        {
-            pergunta: 'Como aplicamos estilos específicos a um elemento com a classe "botao"?',
-            resposta: 'Usamos o seletor .botao no CSS'
         }
     ];
 
@@ -97,10 +93,6 @@ function DeckOptions({setEscolhaDeck, escolhaDeck}) {
         {
             pergunta: 'O que é um objeto em JavaScript?',
             resposta: 'Uma coleção de pares chave-valor que representam propriedades e métodos'
-        },
-        {
-            pergunta: 'O que significa "hoisting" em JavaScript?',
-            resposta: 'O comportamento de mover declarações de variáveis e funções para o topo do escopo'
         }
     ];
 
@@ -123,12 +115,6 @@ function DeckOptions({setEscolhaDeck, escolhaDeck}) {
         }, {
             pergunta: 'Usamos o npm para __',
             resposta: 'Gerenciar os pacotes necessários e suas dependências'
-        }, {
-            pergunta: 'Usamos props para __',
-            resposta: 'Passar diferentes informações para componentes '
-        }, {
-            pergunta: 'Usamos estado (state) para __',
-            resposta: 'Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente'
         }
     ];
 

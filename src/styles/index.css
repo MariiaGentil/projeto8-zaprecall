@@ -33,6 +33,13 @@ body {
   font-size: 36px;
 }
 
+.tela-principal p {
+  color: #ffffff;
+  padding-top: 10px;
+  text-decoration: underline;
+  font-family: var(--secundary-font);
+}
+
 .option {
   padding: 10px;
   border: none;
@@ -201,6 +208,7 @@ option::placeholder{
   color: #FFF;
   font-family: var(--secundary-font);
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .icons {
