@@ -7,9 +7,6 @@ import Finalizacao from './Finalizacao'
 function TelaPergunta({ setMudarTela, escolhaDeck, inputInicio, setEscolhaDeck, setInputInicio}) {
   const [acertos, setAcertos] = useState(0)
   const [classIcon, setClassIcon] = useState([])
-
-  console.log('classes', classIcon)
-
   return (
     <div className="tela-pergunta">
       <div className="header">

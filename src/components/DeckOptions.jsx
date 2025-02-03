@@ -1,4 +1,4 @@
-function DeckOptions({setEscolhaDeck, escolhaDeck}) {
+function DeckOptions({setEscolhaDeck}) {
     const deckHTML = [
         {
             pergunta: 'O que significa HTML?',

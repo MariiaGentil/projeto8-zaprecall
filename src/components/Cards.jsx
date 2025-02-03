@@ -2,6 +2,7 @@ import { useState } from "react"
 
 function Cards({ escolhaDeck, setAcertos, acertos, setClassIcon, classIcon }) {
     escolhaDeck = JSON.parse(escolhaDeck)
+
     return (
         <>
             {escolhaDeck.map((elem, i) => (
@@ -49,8 +50,8 @@ function MudarCard({ estadoCard, i, setEstadoCard, elem, setAcertos, acertos, se
             </>
         )
     } else {
-        let icone = classIcon.filter(c => c.index === i)[0].icon
-        let classe = classIcon.filter(c => c.index === i)[0].class
+        let icone = classIcon.filter(elem => elem.index === i)[0].icon
+        let classe = classIcon.filter(elem => elem.index === i)[0].class
         card = (
             <>
                 <p className={classe}>Pergunta {++i}</p>
